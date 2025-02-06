@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numerical Ability Test</title>
+    <link rel="icon" type="image/png" href="Logo_Navik.png" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-blue-900 min-h-screen flex flex-col items-center animate-fadeIn">
+    <!-- HEADER -->
+    <header class="w-full flex justify-between items-center p-6 bg-gray-900 shadow-lg">
+        <img alt="Navik logo" class="h-12 transition-transform hover:scale-105" src="Logo_Navik.png" />
+        <nav>
+            <a class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition" href="dashboard.html">Back to Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-5xl font-bold mb-6 text-white">Numerical Ability Test</h1>
+        <p class="text-lg mb-8 max-w-2xl text-blue-300">Answer the following questions:</p>
+
+        <div class="w-full max-w-4xl bg-white p-6 roun
+        ded-lg shadow-lg text-black">
+            <form id="quizForm">
+                <ol class="list-decimal pl-5 space-y-6">
+                    <!-- Question 1 -->
+                    <ul class="text-left space-y-6">
+                    <li>
+                        1. A mobile phone originally costs ₹25,000 and is offered at a 20% discount during a sale. What is the sale price?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="a" class="mr-2" aria-label="₹20,000" />
+                                ₹20,000
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="b" class="mr-2" aria-label="₹18,000" />
+                                ₹18,000
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="c" class="mr-2" aria-label="₹22,500" />
+                                ₹22,500
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="d" class="mr-2" aria-label="₹23,000" />
+                                ₹23,000
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        2. If the price of a laptop increases from ₹45,000 to ₹54,000, what is the percentage increase?       
+
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="a" class="mr-2" aria-label="15%" />
+                                15%
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="b" class="mr-2" aria-label="20%" />
+                                20%
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="c" class="mr-2" aria-label="25%" />
+                                25%
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="d" class="mr-2" aria-label="30%" />
+                                30%
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        3. A factory produces 1,200 units of a product in 8 days. How many units will it produce in 15 days at the same rate?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="a" class="mr-2" aria-label="2,000 units" />
+                                2,000 units
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="b" class="mr-2" aria-label="2,250 units" />
+                                2,250 units
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="c" class="mr-2" aria-label="2,400 units" />
+                                2,400 units
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="d" class="mr-2" aria-label="2,600 units" />
+                                2,600 units
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        4. If a car's fuel efficiency is 15 km per liter, how much fuel is needed to travel 450 km?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="a" class="mr-2" aria-label="25 liters" />
+                                25 liters
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="b" class="mr-2" aria-label="30 liters" />
+                                30 liters
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="c" class="mr-2" aria-label="35 liters" />
+                                35 liters
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="d" class="mr-2" aria-label="40 liters" />
+                                40 liters
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        5. Solve for x: 3x + 15 = 0
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="a" class="mr-2" aria-label="-5" />
+                                -5
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="b" class="mr-2" aria-label="5" />
+                                5
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="c" class="mr-2" aria-label="-3" />
+                                -3
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="d" class="mr-2" aria-label="3" />
+                                3
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        6. What is 25% of ₹1,200?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q6" value="a" class="mr-2" aria-label="₹200" />
+                                ₹200
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q6" value="b" class="mr-2" aria-label="₹250" />
+                                ₹250
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q6" value="c" class="mr-2" aria-label="₹300" />
+                                ₹300
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q6" value="d" class="mr-2" aria-label="₹350" />
+                                ₹350
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        7. A train travels at an average speed of 90 km/h. How long will it take to cover a distance of 450 km?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q7" value="a" class="mr-2" aria-label="4 hours" />
+                                4 hours
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q7" value="b" class="mr-2" aria-label="4.5 hours" />
+                                4.5 hours
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q7" value="c" class="mr-2" aria-label="5 hours" />
+                                5 hours
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q7" value="d" class="mr-2" aria-label="5.5 hours" />
+                                5.5 hours
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        8. What is the value of π (pi) rounded to two decimal places?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q8" value="a" class="mr-2" aria-label="3.12" />
+                                3.12
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q8" value="b" class="mr-2" aria-label="3.14" />
+                                3.14
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q8" value="c" class="mr-2" aria-label="3.16" />
+                                3.16
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q8" value="d" class="mr-2" aria-label="3.18" />
+                                3.18
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        9. If 10 workers can complete a task in 15 days, how many days will it take for 5 workers to complete the same task, assuming they work at the same rate?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q9" value="a" class="mr-2" aria-label="15 days" />
+                                15 days
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q9" value="b" class="mr-2" aria-label="20 days" />
+                                20 days
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q9" value="c" class="mr-2" aria-label="25 days" />
+                                25 days
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q9" value="d" class="mr-2" aria-label="30 days" />
+                                30 days
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        10. What is the sum of the interior angles of a pentagon?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q10" value="a" class="mr-2" aria-label="540 degrees" />
+                                540 degrees
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q10" value="b" class="mr-2" aria-label="600 degrees" />
+                                600 degrees
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q10" value="c" class="mr-2" aria-label="720 degrees" />
+                                720 degrees
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q10" value="d" class="mr-2" aria-label="900 degrees" />
+                                900 degrees
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        11. If a rectangular field has a length of 50 meters and a width of 30 meters, what is its area?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q11" value="a" class="mr-2" aria-label="1,500 m²" />
+                                1,500 m²
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q11" value="b" class="mr-2" aria-label="1,800 m²" />
+                                1,800 m²
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q11" value="c" class="mr-2" aria-label="2,000 m²" />
+                                2,000 m²
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q11" value="d" class="mr-2" aria-label="2,500 m²" />
+                                2,500 m²
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        12. Simplify the expression: 4(x + 5) - 3x
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q12" value="a" class="mr-2" aria-label="x + 20" />
+                                x + 20
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q12" value="b" class="mr-2" aria-label="7x + 20" />
+                                7x + 20
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q12" value="c" class="mr-2" aria-label="x + 10" />
+                                x + 10
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q12" value="d" class="mr-2" aria-label="x + 15" />
+                                x + 15
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        13. What is the probability of drawing an Ace from a standard deck of 52 playing cards?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q13" value="a" class="mr-2" aria-label="1/13" />
+                                1/13
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q13" value="b" class="mr-2" aria-label="1/26" />
+                                1/26
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q13" value="c" class="mr-2" aria-label="1/52" />
+                                1/52
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q13" value="d" class="mr-2" aria-label="1/4" />
+                                1/4
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        14. If the exchange rate is ₹75 per USD, how many Indian Rupees will you get for 500 USD?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q14" value="a" class="mr-2" aria-label="₹35,000" />
+                                ₹35,000
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q14" value="b" class="mr-2" aria-label="₹37,500" />
+                                ₹37,500
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q14" value="c" class="mr-2" aria-label="₹40,000" />
+                                ₹40,000
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q14" value="d" class="mr-2" aria-label="₹45,000" />
+                                ₹45,000
+                            </label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        15. A triangle has angles measuring 50°, 60°, and ___?
+                        <div class="flex flex-col mt-2 space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q15" value="a" class="mr-2" aria-label="60°" />
+                                60°
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q15" value="b" class="mr-2" aria-label="70°" />
+                                70°
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q15" value="c" class="mr-2" aria-label="80°" />
+                                80°
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q15" value="d" class="mr-2" aria-label="90°" />
+                                90°
+                            </label>
+                        </div>
+                    </li>
+                    
+
+                    
+
+                </ol>
+                <button type="submit" class="bg-blue-600 text-white py-3 px-8 rounded-lg mt-6 hover:bg-blue-700 active:bg-blue-800 transition">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full py-10 bg-gradient-to-b from-gray-900 to-blue-900">
+        <div class="container mx-auto px-4 text-white text-center space-y-4">
+            <p>2025 © Navik - Designed & Crafted <span class="text-red-500">❤️</span> by Navik Team</p>
+            <div class="flex justify-center space-x-6">
+                <a class="hover:text-blue-400" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="hover:text-blue-400" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a class="hover:text-blue-400" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a class="hover:text-blue-400" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

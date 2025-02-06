@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navik - Tests</title>
+    <link rel="icon" type="image/png" href="Logo_Navik.png" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gradient-to-b from-blue-900 to-gray-900 min-h-screen flex flex-col items-center font-sans">
+
+    <!-- HEADER -->
+    <header class="w-full flex justify-between items-center p-6 bg-gray-900 shadow-lg">
+        <img alt="Navik logo" class="h-12 transition-transform hover:scale-105" src="Logo_Navik.png" />
+
+        <nav class="flex space-x-6 text-lg">
+            <a class="hover:text-blue-400" href="index.html">Home</a>
+            <a class="hover:text-blue-400" href="#">Career Exploration</a>
+            <a class="hover:text-blue-400" href="#">Mentor Community</a>
+            <a class="hover:text-blue-400" href="#">Report</a>
+            <a class="hover:text-blue-400" href="#">Roadmap</a>
+            <a class="text-blue-400 font-bold border-b-2 border-blue-400" href="test.html">Tests</a>
+            <a class="hover:text-blue-400" href="#">Profile</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">Tests</h1>
+        <p class="text-lg md:text-xl mb-8 max-w-2xl text-blue-300">
+            Take our carefully designed tests to assess your skills, personality, and career suitability. Choose from the tests below:
+        </p>
+
+        <!-- TEST BUTTONS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="numericalability.html">
+                <button aria-label="Numerical Ability Test" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                    Numerical Ability Test
+                </button>
+            </a>
+            <button aria-label="Personality Assessment" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                Personality Assessment
+            </button>
+            <button aria-label="Abstract Reasoning" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                Abstract Reasoning
+            </button>
+            <button aria-label="Space Relations" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                Space Relations
+            </button>
+            <button aria-label="Mechanical Reasoning" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                Mechanical Reasoning
+            </button>
+            <button aria-label="EQ" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                EQ
+            </button>
+            <button aria-label="IQ" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                IQ
+            </button>
+            <button aria-label="Memory" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                Memory
+            </button>
+            <button aria-label="Career Interest" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition">
+                Career Interest
+            </button>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full py-10 bg-gradient-to-b from-gray-900 to-blue-900 text-center">
+        <p class="text-white text-sm mb-4">
+            2025 © Navik - Designed & Crafted <span class="text-red-500">❤️</span> by Navik Team
+        </p>
+        <div class="flex justify-center space-x-6">
+            <a class="text-white hover:text-blue-400" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a class="text-white hover:text-blue-400" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a class="text-white hover:text-blue-400" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a class="text-white hover:text-blue-400" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

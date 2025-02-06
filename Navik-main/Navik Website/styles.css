@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+}
+
+/* Fade-in Animation on Page Load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Header Logo Hover Rotation */
+.logo-hover:hover {
+    transform: rotate(6deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Nav Link Underline Hover Effect */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #3b82f6;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Button Hover Effect */
+.btn-hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(59, 130, 246, 0.4);
+}
+
+/* Text Fade-in & Slide-up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Floating Icons Animation */
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+.animate-floating {
+    animation: floating 3s infinite ease-in-out;
+}
